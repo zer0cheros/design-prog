@@ -9,4 +9,4 @@ window.onscroll = ()=>{
         navbar.classList.remove('navbar-scroll')
         content.style.top = '100%'  
       }
-}
+} 
