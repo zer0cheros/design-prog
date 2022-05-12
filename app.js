@@ -2,6 +2,7 @@ const navbar = document.querySelector('.navbar')
 const content = document.querySelector('.content')
 const rightText = document.querySelector('.right-text')
 const leftText = document.querySelector('.left-text')
+const studies = document.querySelector('.studies')
 
 window.onscroll = ()=>{
   color()
@@ -23,6 +24,14 @@ function color(){
   else{
     rightText.style.color = 'var(--text-color)'
     leftText.style.color = 'var(--text-color)'
+  }
+}
+function slideUp(){
+  if(document.body.scrollTop > 330 || document.documentElement.scrollTop > 330){
+    studies.style.top = '130%' 
+  }
+  else {
+    studies.style.top = '180%' 
   }
 }
   
