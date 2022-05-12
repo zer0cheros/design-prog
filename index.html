@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4ce299fed7.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <div class="left-text">Programutvecklare 2022</div>
         <div class="right-text">
-            <p>i</p>
-            <p>g</p>
-            <p>o</p>
+            <i class="fa-brands fa-github"></i><br>
+            <i class="fa-brands fa-facebook"></i><br>
+            <i class="fa-brands fa-instagram"></i>  
         </div>
+        <!--NAVBAR-->
         <nav class="navbar">
             <div class="navbar-content">
             <div class="logo">
@@ -31,49 +33,73 @@
             </div>
             </div>
         </nav>
+        <!--FRONT-TEXT-->
         <div class="text-container">
             <h1 class="text">Programutvecklare</h1>
         </div>
         <div class="picture"></div>
-        <section class="content">
+        <div class="stripe"></div>
+        <div class="picture-under"></div>
+        <div class="cloud"></div>
+        <!--CONTENT-->
+        <section>
+            <div class="content" >
             <div class="info">
-                <div class="card">
+                <div class="card school-info">
                     <h3 class="heading">Programutvecklare</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis obcaecati a
                         ssumenda esse odio saepe mollitia illo consectetur ad quasi, officia dignissimos
                          natus maxime fuga id. Repellendus, architecto harum. Officiis, magnam atque? 
                         Iste maiores, odit quasi rem odio debitis atque? Non cupiditate eum quam nam magnam?
                          Mollitia esse corrupti possimus architecto.</p>
-                    <button class="btn contact">Ta kontakt med Optima</button>
+                    <button class="myButton">Ta kontakt med Optima</button>
+                    <button class="myButton">Ansökan</button>
                 </div>
-            
-            <div class="teachers">
-                <div class="card">
-                    <div>
+            <div class="teacher">
+                    <div class="teachers card">
                         <h3 class="heading">Christian Wiss</h3>
-                        <div class="d-flex">
+                        <div class="d-flex flex-column">
                             <img class="mark" src="./assets/profile" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium nemo ex 
-                            ab voluptatem blanditiis, rerum repellendus a expedita 
-                            deserunt porro, mollitia repellat assumenda debitis officiis nisi eligendi facilis! 
-                            Perspiciatis.
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium nemo ex  
                             </p>
-                        </div>
-                    </div>  
-                    <div>
+                        </div> 
+                    </div> 
+                    <div class="teachers card">
                         <h3 class="heading">Jimi Ahlgren</h3>
-                        <div class="d-flex">
+                        <div class="d-flex flex-column">
                             <img class="mark" src="./assets/profile" alt="">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium nemo ex 
-                            ab voluptatem blanditiis, rerum repellendus a expedita 
-                            deserunt porro, mollitia repellat assumenda debitis officiis nisi eligendi facilis! 
-                            Perspiciatis.
                             </p>
                         </div>
                     </div>  
                 </div>
             </div>
         </div>
+    </div>
+        </section>
+        <!--STUDIES-SECTION-->
+        <section>
+            <div class="studies card d-flex">
+                <div class="studies-left">
+                    <div class="studies-info">
+                        <h1>Studier</h1>
+                        <p>Gillar du programmering och är redo att ta ditt intresse till proffsnivå? Då är utbildningen för programutvecklare rätt för dig. Under första året av studierna får du en stabil grund för hur datorer fungerar, sätts ihop och fungerar i nätverk. Du får också lära dig om kundbetjäning, allmän företagskunskap, kontorsprogram och grunderna i webbutveckling. Efter första året sätts stor fokus på programmering och multimedia. Vi arbetar främst i grupp med att utveckla och underhålla mindre spel-, mobil- och webbapplikationer. Vi strävar efter att arbeta med riktiga projekt för interna och externa kunder.
+                            Du får också möjligheten att sätta fokus på det som intresserar dig inom programutveckling. Det är bra om du trivs med att samarbeta med andra, ta ansvar och att kreativt lösa problem. Detta ger dig en bra bas för arbetslivet eller vidarestudier vid högskola och universitet. Du kan också grunda ditt eget företag.</p>
+                    </div>
+                    <div class="studies-box">
+                        <img src="./assets/Prog.png" alt="">
+                    </div>
+                </div>
+                <div class="studies-right d-flex flex-column">
+                    <h1>Ansökan</h1>
+                    <h3>Till utbildningen kan du söka via kontinuerlig ansökan under hela läsåret. De som avslutat sina grundskole- eller gymnasiestudier, kan också söka via den gemensamma ansökningen.
+                        Tilläggsinformation: Studiehandledare Sanna-Junell, sanna.knutar-junell@optimaedu.fi
+                    </h3>
+                    <div class="card">
+                        <h3>Sök till Programutvecklare, via <a href="http:studieinfo.fi">studieinfo.fi</a></h3>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
     <script src="app.js"></script>
