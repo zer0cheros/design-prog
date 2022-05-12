@@ -6,6 +6,7 @@
     --test1-color: #E4FF1A;
     --test2-color: #FF5714;
     --test-color: #7C6C77;
+    --test-color-op:#7c6c77e1;
 }
 html {
     scroll-behavior: smooth;
@@ -18,6 +19,7 @@ html {
 }
 body {
     background-color: var(--primary_color);
+    min-height: 300vh;
 }
 .container {
     position: relative;
@@ -121,14 +123,14 @@ body {
 .navbar {
     width: 100%;
     background: transparent;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     transition: 0.8s;
     z-index: 11;
 }
 .navbar-scroll{
-    background: var(--primary_color_op);
+    background: var(--test-color-op);
     transition: 0.8s;
     box-shadow: 1px 1px 10px #999;
 }
