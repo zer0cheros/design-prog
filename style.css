@@ -1,7 +1,7 @@
 :root {
     --primary_color: rgba(213, 212, 212, 0.6);
     --secondary-color: rgb(47, 45, 45);
-    --text-color: rgba(252, 252, 252, 0.849);
+    --text-color: rgb(252, 252, 252);
     --primary_color_op: rgba(228, 226, 226, 0.8);
     --test1-color: #E4FF1A;
     --test2-color: #FF5714;
@@ -35,10 +35,11 @@ body {
 .left-text {
     position: fixed;
     top: 50%;
-    left: -150px;
+    left: -5%;
     transform: rotate(270deg);
     font-size: 2.5rem;
     color: var(--secondary-color);
+    z-index: 21;
 }
 .right-text {
     position: fixed;
@@ -63,18 +64,18 @@ body {
     border: 15px solid var(--text-color);
     border-radius: 10px;
     z-index: 10;
-    box-shadow: 1px 1px 10px #999;
+    box-shadow: 1px 5px 15px #999;
 }
 .text {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 6.5vw;
+    font-size: 12vw;
     font-weight: 900;
     color: var(--text-color);
     width: 100%;
     height: 100%; 
-    text-shadow: 1px 1px 10px #999;
+    text-shadow: 1px 5px 10px #999;
     
 }
 .picture {
@@ -99,14 +100,23 @@ body {
     position: absolute;
     top: 130%;
     z-index: -1;
-    filter: grayscale(20%) opacity(0.9);
+    filter: grayscale(90%) opacity(0.5);
 }
 .stripe {
     position: absolute;
     top: 100%;
     height: 30%;
     width: 100%;
-    background-color: var(--test-color);
+    background-color: var(--text-color);
+}
+.stripe::after {
+    content: '';
+    width: 100%;
+    background-color: var(--text-color);
+    position: absolute;
+    height: 520px;
+    bottom: -100px;
+    transform: skewY(-6deg);
 }
 .cloud {
     background-image: url('./assets/cloud.png');
