@@ -1,7 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,300&display=swap');
+
+
 :root {
-    --primary_color: rgba(213, 212, 212, 0.6);
-    --secondary-color: rgb(47, 45, 45);
+    --primary_color: rgb(247, 246, 246);
+    --secondary-color: rgb(242, 239, 228);
     --text-color: rgb(252, 252, 252);
+    --text-color2: rgb(23, 23, 23);
     --primary_color_op: rgba(228, 226, 226, 0.8);
     --test1-color: #E4FF1A;
     --test2-color: #FF5714;
@@ -11,11 +16,19 @@
 html {
     scroll-behavior: smooth;
     line-height: 1.5;
+    font-weight: 700;
 }
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+h3 {
+    border-left: var(--test2-color) 2rem solid;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border-right: var(--test2-color) 2rem solid;
+    text-align: center;
 }
 body {
     background-color: var(--primary_color);
@@ -89,7 +102,6 @@ body {
     left: 0;
     z-index: 2;
     background-position: center;
-    box-shadow: -8px 36px 15px -4px var(--secondary-color);
 }
 .picture-under{
     background-image: url('./assets/Programutvecklare.jpg');
@@ -107,14 +119,14 @@ body {
     top: 100%;
     height: 30%;
     width: 100%;
-    background-color: var(--text-color);
+    background-color: var(--test2-color);
 }
 .stripe::after {
     content: '';
     width: 100%;
-    background-color: var(--text-color);
+    background-color: var(--text-color2);
     position: absolute;
-    height: 520px;
+    height: 320px;
     bottom: -100px;
     transform: skewY(-6deg);
 }
@@ -131,18 +143,20 @@ body {
     animation: move 60s infinite;
     
 }
+/*Navbar*/
 .navbar {
     width: 100%;
-    background: transparent;
+    background: var(--primary_color);
     position: fixed;
     top: 0;
     left: 0;
     transition: 0.8s;
     z-index: 11;
+    box-shadow: -18px 2px 25px -16px var(--test-color);
 }
 .navbar-scroll{
-    background: var(--test-color-op);
-    transition: 0.8s;
+    background: var(--text-color2);
+    transition: 1.8s;
     box-shadow: 1px 1px 10px #999;
 }
 .navbar-content {
@@ -161,11 +175,14 @@ body {
     list-style: none; 
 }
 .collapse-menu ul li a{
-    color: var(--secondary-color);
+    color: var(--text-color2);
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 500;
     padding: 1rem; 
+}
+.collapse-menu ul li a:hover {
+    border-bottom: var(--test2-color) 4px dotted;
 }
 .logo img{
     border-radius: 10px;
@@ -214,19 +231,22 @@ body {
 .content{
     position: absolute;
     top: 100%;
-    width: 60%;
     background-color: var(--primary_color);
     z-index: 5;
     transition: 0.8s;
     border-radius: 10px;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    font-size: larger;
 }
 .info {
     max-height: 700px;
-    max-width: 100%;
-    margin: 2rem;
+    max-width: 70%;
+    margin: auto;
     display: flex;
     gap: 2rem;
     justify-content: space-between;
+    padding: 2rem;
 }
 .teachers {
     max-height: 100%;

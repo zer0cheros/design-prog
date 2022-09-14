@@ -3,14 +3,17 @@ const content = document.querySelector('.content')
 const rightText = document.querySelector('.right-text')
 const leftText = document.querySelector('.left-text')
 const studies = document.querySelector('.studies')
+const navbarText = document.querySelectorAll('.collapse-scroll')
 
 window.onscroll = ()=>{
   color()
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         navbar.classList.add('navbar-scroll')
+        navbarText.forEach(text => text.style.color = '#ffff')
         content.style.top = '80%'
        } else {
         navbar.classList.remove('navbar-scroll')
+        navbarText.forEach(text => text.style.color = '#000')
         content.style.top = '100%'  
       }
 }
