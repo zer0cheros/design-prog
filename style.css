@@ -26,9 +26,12 @@ html {
 h3 {
     border-left: var(--test2-color) 2rem solid;
     padding: 0.5rem;
+    margin: 1rem;
     border-radius: 1rem;
     border-right: var(--test2-color) 2rem solid;
     text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: x-large;
 }
 body {
     background-color: var(--primary_color);
@@ -102,6 +105,7 @@ body {
     left: 0;
     z-index: 2;
     background-position: center;
+    box-shadow: 1px 1px 10px #999;
 }
 .picture-under{
     background-image: url('./assets/Programutvecklare.jpg');
@@ -117,18 +121,19 @@ body {
 .stripe {
     position: absolute;
     top: 100%;
-    height: 30%;
+    height: 35%;
     width: 100%;
     background-color: var(--test2-color);
+    box-shadow: 1px 1px 10px #999;
 }
 .stripe::after {
     content: '';
     width: 100%;
-    background-color: var(--text-color2);
+    background-color: var(--primary_color);
     position: absolute;
-    height: 320px;
-    bottom: -100px;
-    transform: skewY(-6deg);
+    height: 80%;
+    bottom: -80px;
+    transform: skewY(-5deg);
 }
 .cloud {
     background-image: url('./assets/cloud.png');
@@ -189,36 +194,34 @@ body {
     margin: 10px;
     opacity: 0.8;
 }
-/*Studies*/
+/*Portfolio*/
 .studies{
     position: absolute;
-    top: 180%;
-    width: auto;
-    max-height: 800px;
-    height: 95%;
-    margin: 0px 2rem;
-    transition: 2s;
-}
-.studies-left, .studies-right {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 2rem;
+    top: 120%;
+    width: 100%;
+    height: 100vh;
+    transition: 1s;
 }
 
+
 .studies-info{
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 0.5rem;
 }
-.studies-box {
-    max-width: 50%;
-}
-.studies-box img {
-    position: relative;
+
+.studies-info img {
     width: 100%;
     height: 100%;
-    border-radius: 6px;
-    transition: 0.8s;
-    box-shadow: -8px 36px 15px -4px var(--test-color);
+    vertical-align: middle;
+    
+}
+.studies-info li {
+    flex-basis: 350px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    list-style: none;
 }
 .studies-box img:hover{
     width: 300%;
@@ -230,14 +233,13 @@ body {
 /*Content*/
 .content{
     position: absolute;
-    top: 100%;
+    top: 300%;
     background-color: var(--primary_color);
     z-index: 5;
     transition: 0.8s;
     border-radius: 10px;
     margin: auto;
-    font-family: 'Lato', sans-serif;
-    font-size: larger;
+    
 }
 .info {
     max-height: 700px;
@@ -301,6 +303,10 @@ body {
 .text-center {
     align-self: center;
     text-align: center;
+}
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
 }
 .myButton {
 	box-shadow: -8px 36px 15px -4px var(--test-color);
