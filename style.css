@@ -24,14 +24,16 @@ html {
     margin: 0;
 }
 h3 {
+    margin: auto;
+    margin-bottom: 1rem;
     border-left: var(--test2-color) 2rem solid;
-    padding: 0.5rem;
-    margin: 1rem;
+    padding: 1rem;
     border-radius: 1rem;
     border-right: var(--test2-color) 2rem solid;
     text-align: center;
     font-family: 'Lato', sans-serif;
-    font-size: x-large;
+    font-size: 2rem;
+    max-width: 300px;
 }
 body {
     background-color: var(--primary_color);
@@ -151,13 +153,13 @@ body {
 /*Navbar*/
 .navbar {
     width: 100%;
-    background: var(--primary_color);
+    background: transparent;
     position: fixed;
     top: 0;
     left: 0;
     transition: 0.8s;
     z-index: 11;
-    box-shadow: -18px 2px 25px -16px var(--test-color);
+    
 }
 .navbar-scroll{
     background: var(--text-color2);
@@ -199,13 +201,14 @@ body {
     position: absolute;
     top: 120%;
     width: 100%;
-    height: 100vh;
-    transition: 1s;
+    height: 180vh;
+    transition: 1.5s;
 }
 
 
 .studies-info{
     display: flex;
+    padding: 1rem;
     flex-wrap: wrap;
     justify-content: left;
     gap: 0.5rem;
@@ -214,11 +217,12 @@ body {
 .studies-info img {
     width: 100%;
     height: 100%;
-    vertical-align: middle;
+    border-radius: 3px;
+    box-shadow: 1px 10px 10px #999;
     
 }
 .studies-info li {
-    flex-basis: 350px;
+    flex-basis: 18%;
     flex-shrink: 1;
     flex-grow: 1;
     list-style: none;
@@ -233,17 +237,17 @@ body {
 /*Content*/
 .content{
     position: absolute;
-    top: 300%;
+    top: 320%;
     background-color: var(--primary_color);
     z-index: 5;
     transition: 0.8s;
     border-radius: 10px;
     margin: auto;
-    
+    z-index: 10;
 }
 .info {
     max-height: 700px;
-    max-width: 70%;
+    max-width: 90%;
     margin: auto;
     display: flex;
     gap: 2rem;
@@ -253,6 +257,17 @@ body {
 .teachers {
     max-height: 100%;
     height: 100%;
+}
+.background {
+    background-image: url('./assets/back.jpg');
+    position: absolute;
+    background-attachment: fixed;
+    top: 220vh;
+    width: 100vw;
+    height: 150vh;
+    background-size: cover;
+    z-index: -1;
+   
 }
 .teacher {
     max-height: 100%;
@@ -282,6 +297,17 @@ body {
 .studies-info h1 {
     text-align: center;
 }
+/*FOOTER*/
+footer {
+    position: absolute;
+    top: 400%;
+    width: 100%;
+    height: 120px;
+    background-color: var(--text-color2);
+    box-shadow: 3px -4px 50px #999;
+    color: #ffffff;
+}
+
 /*Media*/
 @media(max-width: 800px){
     .collapse-menu{

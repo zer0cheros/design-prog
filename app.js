@@ -11,14 +11,14 @@ window.onscroll = ()=>{
         navbar.classList.add('navbar-scroll')
         navbarText.forEach(text => text.style.color = '#ffff')
         setTimeout(()=>{
-          studies.style.top = '110%'
+          studies.style.top = '130%'
           console.log(document.documentElement.scrollTop);
-        },1500)
+        },1000)
         
        } else {
         navbar.classList.remove('navbar-scroll')
         navbarText.forEach(text => text.style.color = '#000')
-        studies.style.top = '120%'
+        studies.style.top = '150%'
       }
 }
 
